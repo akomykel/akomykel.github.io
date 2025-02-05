@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ar-demo</title>
     <meta name="description" content="ar-demo">
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./look-at.js"></script>
 </head>
 <body>
     <a-scene>
-        <a-entity position="220 1 20">
-            <a-entity gltf-model="/image-tracking/nft/trex/scene.gltf" scale="5 5 5" position="-10 1 20">
-        </a-entity>
+        <a-entity id="camera" wasd-controls camera look-controls position="0 1.5 0"></a-entity><!--xyz-->
+        
+        <a-plane look-at="#camera" position="-1 0.5 -3" rotation="0 45 0" color="#334455"></a-plane>
+        <!-- <a-entity gltf-model="/image-tracking/nft/trex/scene.gltf" scale="5 5 5" position="-10 1 20"> -->
     </a-scene>
 </body>
 </html>
