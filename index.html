@@ -9,7 +9,10 @@
     <script src="./look-at.js"></script>
 </head>
 <body>
-    <a-scene>
+    <a-scene
+        vr-mode-ui='enabled: false;'
+        renderer="logarithmicDepthBuffer: true; precision: medium;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
         <!--<a-entity position="0 1.5 0"></a-entity>id="camera" wasd-controls camera look-controls -->
         
         <!-- <a-plane look-at="#camera" position="-1 0.5 -3" rotation="0 45 0" color="#334455"></a-plane> -->
