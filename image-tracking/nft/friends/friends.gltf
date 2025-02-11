@@ -9,7 +9,8 @@
 			"name":"Scene",
 			"nodes":[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -18,9 +19,9 @@
 			"mesh":0,
 			"name":"Cube",
 			"translation":[
-				-3.2120275497436523,
-				2.8447442054748535,
-				4.373661994934082
+				0.20168042182922363,
+				0.08663535118103027,
+				0.04440784454345703
 			]
 		},
 		{
@@ -35,6 +36,21 @@
 				-3.498842239379883,
 				1.9158592224121094,
 				5.560125827789307
+			]
+		},
+		{
+			"mesh":1,
+			"name":"Cube.001",
+			"rotation":[
+				1,
+				0,
+				0,
+				4.371138828673793e-08
+			],
+			"translation":[
+				-11.46666145324707,
+				-2.634540319442749,
+				-4.95092248916626
 			]
 		}
 	],
@@ -66,6 +82,20 @@
 					},
 					"indices":3,
 					"material":0
+				}
+			]
+		},
+		{
+			"name":"Cube.001",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":4,
+						"NORMAL":5,
+						"TEXCOORD_0":6,
+						"COLOR_0":7
+					},
+					"indices":8
 				}
 			]
 		}
@@ -104,6 +134,47 @@
 			"componentType":5123,
 			"count":36,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":4,
+			"componentType":5126,
+			"count":24,
+			"max":[
+				8.490852355957031,
+				3.228294610977173,
+				5.479330539703369
+			],
+			"min":[
+				-8.490852355957031,
+				-3.228294610977173,
+				-5.479330539703369
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":5,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":6,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":7,
+			"componentType":5123,
+			"count":24,
+			"normalized":true,
+			"type":"VEC4"
+		},
+		{
+			"bufferView":8,
+			"componentType":5123,
+			"count":36,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -130,11 +201,41 @@
 			"byteLength":72,
 			"byteOffset":768,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":288,
+			"byteOffset":840,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":288,
+			"byteOffset":1128,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":192,
+			"byteOffset":1416,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":192,
+			"byteOffset":1608,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":1800,
+			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":840,
+			"byteLength":1872,
 			"uri":"friends.bin"
 		}
 	]
