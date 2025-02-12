@@ -1,0 +1,32 @@
+{
+	"asset":{
+		"extras": {
+			"author": "Abner Wu (https://sketchfab.com/dashdu)",
+			"license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+			"source": "https://sketchfab.com/3d-models/killer-whale-63b680d7e58f463a9868ed7bf163094a",
+			"title": "Tyrannosaurus Rex"
+		},
+		"generator": "Sketchfab-5.68.0",
+		"version": "2.0"
+	},
+	"scene":0,
+	"scenes":[
+		{
+			"name":"Scene",
+			"nodes":[
+				0
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"Empty",
+			"rotation":[
+				0.70710688829422,
+				0,
+				0,
+				0.7071066498756409
+			]
+		}
+	]
+}
