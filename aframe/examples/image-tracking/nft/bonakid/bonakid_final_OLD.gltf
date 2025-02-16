@@ -9,8 +9,7 @@
 			"name":"Scene",
 			"nodes":[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -38,21 +37,6 @@
 				0,
 				0
 			]
-		},
-		{
-			"mesh":2,
-			"name":"bonakid_final",
-			"rotation":[
-				0.5,
-				0.5,
-				-0.5,
-				0.5
-			],
-			"translation":[
-				1.4220006465911865,
-				-0.0657932311296463,
-				-0.2433175891637802
-			]
 		}
 	],
 	"materials":[
@@ -77,18 +61,6 @@
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
-				},
-				"metallicFactor":0,
-				"roughnessFactor":0.5
-			}
-		},
-		{
-			"alphaMode":"BLEND",
-			"doubleSided":true,
-			"name":"bonakid_final",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":1
 				},
 				"metallicFactor":0,
 				"roughnessFactor":0.5
@@ -123,42 +95,17 @@
 					"material":1
 				}
 			]
-		},
-		{
-			"name":"bonakid_final",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":8,
-						"NORMAL":9,
-						"TEXCOORD_0":10
-					},
-					"indices":11,
-					"material":2
-				}
-			]
 		}
 	],
 	"textures":[
 		{
 			"sampler":0,
 			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
 		}
 	],
 	"images":[
 		{
-			"mimeType":"image/png",
-			"name":"bonakid",
-			"uri":"bonakid.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"bonakid_final",
-			"uri":"bonakid_final.png"
+			"uri":"textures/bonakid_final.jpg"
 		}
 	],
 	"accessors":[
@@ -229,40 +176,6 @@
 			"componentType":5123,
 			"count":15606,
 			"type":"SCALAR"
-		},
-		{
-			"bufferView":8,
-			"componentType":5126,
-			"count":4,
-			"max":[
-				0.5,
-				0,
-				0.5
-			],
-			"min":[
-				-0.5,
-				0,
-				-0.5
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":9,
-			"componentType":5126,
-			"count":4,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":10,
-			"componentType":5126,
-			"count":4,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":11,
-			"componentType":5123,
-			"count":6,
-			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -313,30 +226,6 @@
 			"byteLength":31212,
 			"byteOffset":87368,
 			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":48,
-			"byteOffset":118580,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":48,
-			"byteOffset":118628,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":32,
-			"byteOffset":118676,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":12,
-			"byteOffset":118708,
-			"target":34963
 		}
 	],
 	"samplers":[
@@ -349,7 +238,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":118720,
+			"byteLength":118580,
 			"uri":"bonakid_final.bin"
 		}
 	]
