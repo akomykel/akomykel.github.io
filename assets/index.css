@@ -1,19 +1,39 @@
 html,
 body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 canvas,
 video {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0 !important;
-    object-fit: contain !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+}
+
+/* style for the loader */
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
 }
