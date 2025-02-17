@@ -19,7 +19,7 @@ video {
 }
 
 /* style for the loader */
-.loader {
+.arjs-loader {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -32,7 +32,7 @@ video {
   align-items: center;
 }
 
-.loader div {
+.arjs-loader div {
   text-align: center;
   font-size: 1.25em;
   color: white;
