@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style='margin : 0px; overflow: hidden;'>
+	<head>
+    	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<style>
+			.buttons {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 5em;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  z-index: 10;
+			}
+		
+			.say-hi-button {
+			  padding: 0.25em;
+			  border-radius: 4px;
+			  border: none;
+			  background: white;
+			  color: black;
+			  width: 4em;
+			  height: 2em;
+			}
+		  </style>
+  	</head>
+  	<body style='margin : 0px; overflow: hidden;'>
+		<div class="buttons">
+			<button class="say-hi-button">THIS BUTTON</button>
+		</div>
     <a-scene 
       embedded
       arjs='debugUIEnabled: false; sourceType: webcam; trackingMethod: best;'
@@ -15,12 +41,12 @@
       >
       
       <a-marker preset="hiro">
-          <a-box position='0 0.5 0' material='color: yellow;'>
+          <a-box position='0 0.5 0' material='color: orange;'>
 		  </a-box>
 		  
       </a-marker>
       
-	  <button>THIS BUTTON</button>
+	  
 
       <a-entity camera></a-entity>
     
