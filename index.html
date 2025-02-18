@@ -49,7 +49,12 @@
       smooththreshold="5"
     >
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-      <button position="0 0 0">THIS IS A BUTTON ABC</button>
+      <a-entity geometry="primitive: plane; width: 1; height: 1"
+                  material="color: red;  opacity:0.7; side: double"
+                  text="value: click me; align: center; wrapCount: 15"
+                  position="0 0 0"
+                  rotation="-90 0 0" class="clickable"
+                  id="animated-marker"></a-entity>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-marker-camera preset="hiro"></a-marker-camera>
