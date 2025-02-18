@@ -1,19 +1,29 @@
-<!-- import aframe and then ar.js with image tracking / location based features -->
-<!-- <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script> -->
-<!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
-<!-- <link rel="stylesheet" href="./assets/index.css" /> -->
-<!doctype html>
-<html>
-	<head>
-		<title>AR JS Sample</title>
-		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ar-demo</title>
+    <meta name="description" content="ar-demo">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./look-at.js"></script>
+</head>
+<body>
+    <a-scene
+        vr-mode-ui='enabled: false;'
+        renderer="logarithmicDepthBuffer: true; precision: medium;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        <!--<a-entity position="0 1.5 0"></a-entity>id="camera" wasd-controls camera look-controls -->
+        
+        <!-- <a-plane look-at="#camera" position="-1 0.5 -3" rotation="0 45 0" color="#334455"></a-plane> -->
+        <a-nft
+        type='nft' url='https://akomykel.github.io/image-tracking/nft/drawing.jpg'
+        smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            <a-entity gltf-model="/image-tracking/nft/trex/scene.gltf" position="-1 -20 -40"></a-entity>
+			<button>THIS IS A BUTTON</button>
+        </a-nft>
 
-	<body>
-
-		<!-- a-frame scene -->
-		<a-scene>
-		  <a-box position="-1.5 1 -1.5" rotation="0 0 0" color="#4CC3D9"></a-box>
-		</a-scene>
-  	</body>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
 </html>
