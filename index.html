@@ -28,9 +28,7 @@
 		  </style>
   	</head>
   	<body style='margin : 0px; overflow: hidden;'>
-		<div class="buttons">
-			<button class="say-hi-button">THIS BUTTON</button>
-		</div>
+		
     <a-scene 
       embedded
       arjs='debugUIEnabled: false; sourceType: webcam; trackingMethod: best;'
@@ -41,9 +39,12 @@
       >
       
       <a-marker preset="hiro">
-          <a-box position='0 0.5 0' material='color: orange;'>
+          <a-box position='0 0.5 0' material='color: blue;'>
 		  </a-box>
 		  
+		  <div class="buttons">
+			<button class="say-hi-button">THIS BUTTON</button>
+		</div>
       </a-marker>
       
 	  
