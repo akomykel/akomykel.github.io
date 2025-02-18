@@ -30,27 +30,27 @@
   	<body style='margin : 0px; overflow: hidden;'>
 		
     <a-scene 
-      embedded
-      arjs='debugUIEnabled: false; sourceType: webcam; trackingMethod: best;'
-      vr-mode-ui="enabled: false;"
-      renderer="
-          logarithmicDepthBuffer: true;
-          physicallyCorrectLights: true;"
-      >
+    	embedded
+      	arjs='debugUIEnabled: false; sourceType: webcam; trackingMethod: best;'
+      	vr-mode-ui="enabled: false;"
+      	renderer="
+			logarithmicDepthBuffer: true;
+			physicallyCorrectLights: true;"
+    >
       
-      <a-marker preset="hiro">
-          <a-box position='0 0.5 0' material='color: blue;'>
-		  </a-box>
-		  
-		  <div class="buttons">
-			<button class="say-hi-button">THIS BUTTON</button>
-		</div>
-      </a-marker>
-      
-	  
+		<a-marker preset="hiro">
+			<a-box position='0 0.5 0' material='color: blue;'>
+			</a-box>
+			
+			<a-assets>
+				<div class="buttons">
+					<button class="say-hi-button">THIS BUTTON</button>
+				</div>
+			</a-assets>
+		</a-marker>
 
-      <a-entity camera></a-entity>
-    
+		<a-entity camera></a-entity>
+
     </a-scene>
   </body>
 </html>
