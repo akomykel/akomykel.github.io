@@ -34,8 +34,13 @@
       	arjs
     >
 		<a-marker type="pattern" url="/marker-based/pattern-bonakid.patt">
-			<a-box position='0 0.5 0' material='color: red;'>
-			</a-box>
+			<a-plane 
+				position="0 0.5 0" 
+				width="1" 
+				height="1" 
+				rotation="-90 0 0"
+				material="src:url('/marker-based/FR1.png')"
+			></a-plane>
 		</a-marker>
 
 		<a-entity camera></a-entity>
