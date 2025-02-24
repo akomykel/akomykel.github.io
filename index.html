@@ -33,6 +33,10 @@
     	embedded
       	arjs
     >
+		<a-assets>
+			<button id="mybtn">This is a button</button>
+		</a-assets>
+
 		<a-marker type="pattern" url="/marker-based/pattern-bonakid.patt">
 			<!-- <a-plane 
 				position="0 0.5 0" 
@@ -42,7 +46,7 @@
 				rotation="-90 0 0"
 				material="src:url(FR1.png)"
 			></a-plane> -->
-			this is a text
+			<a-button src="#mybtn"></a-button>
 		</a-marker>
 
 		<a-entity camera></a-entity>
