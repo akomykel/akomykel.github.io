@@ -4,8 +4,10 @@ AFRAME.registerComponent('markerhandler', {
             // redirect to custom URL
             //window.location = 'https://github.com/AR-js-org/AR.js';
             alert('hello ar');
-            var et = document.querySelector('#testentity');
-            et.innerHTML="<h1>Hello AR</h1>";
+            var et = document.querySelector('#refresh-button');
+            et.addEventListener('click', function() {
+                alert('button clicked!');
+            })
         });
     }
 });
