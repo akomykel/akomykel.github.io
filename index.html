@@ -15,7 +15,7 @@
     	<a-scene vr-mode-ui="enabled:false;" renderer="logarithmicDepthBuffer:true;" embedded arjs="trackingMethod:best; sourceType:webcam; debugUIEnabled: false;">
 		
 		<a-marker type="pattern" url="/marker-based/pattern-bonakid.patt" markerhandler>
-			<a-plane 
+			<!-- <a-plane 
 				position="0 0.5 0" 
 				color="yellow"
 				width="1" 
@@ -23,8 +23,9 @@
 				rotation="-90 0 0"
 				material="src:url(FR1.png)"
 			>
-				<a-text value="Hello Sample AR"></a-text>
-			</a-plane>
+			</a-plane> -->
+
+			<a-button value="Hello Sample AR"></a-button>
 		</a-marker>
 
 		<a-entity camera></a-entity>
