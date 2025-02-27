@@ -6,9 +6,9 @@
 		<script src="/test.js"></script>
   	</head>
   	<body style='margin : 0px; overflow: hidden;'>
-		<div class="arjs-loader">
-			<div>Loading, please wait...TESTING</div>
-		</div>
+		<a-assets>
+			<div id="divsample" style="background-color: aqua;">test &nbsp;</div>
+		</a-assets>
 
     	<a-scene vr-mode-ui="enabled:false;" renderer="logarithmicDepthBuffer:true;" embedded arjs="trackingMethod:best; sourceType:webcam; debugUIEnabled: false;">
 		
@@ -26,7 +26,8 @@
 			<!-- 
 		</a-marker> -->
 
-			<a-entity id="refresh-button" geometry="primitive: box" material="color: green" position="0 0 -2" style="visibility: hidden;" btnclick>
+			<a-entity>
+				<a-box src="#divsample"></a-box>
 			</a-entity>
 
 			<a-entity cursor="rayOrigin:mouse" camera></a-entity>
