@@ -15,11 +15,9 @@
 			<div>Loading, please wait...TESTING</div>
 		</div>
 
-		
-
     	<a-scene vr-mode-ui="enabled:false;" renderer="logarithmicDepthBuffer:true;" embedded arjs="trackingMethod:best; sourceType:webcam; debugUIEnabled: false;">
 		
-		<a-marker type="pattern" url="/marker-based/pattern-bonakid.patt">
+		<!-- <a-marker type="pattern" url="/marker-based/pattern-bonakid.patt"> -->
 			<!-- <a-plane 
 				position="0 0.5 0" 
 				color="yellow"
@@ -30,12 +28,14 @@
 			>
 			</a-plane> -->
 
+			<!-- 
+		</a-marker> -->
+
 			<a-entity id="refresh-button" geometry="primitive: box" material="color: blue" position="0 0 -2" >
 				<a-text value="Hello Sample AR" btnclick></a-text>
 			</a-entity>
-		</a-marker>
 
-		<a-entity cursor="rayOrigin:mouse" camera></a-entity>
-    </a-scene>
-  </body>
+			<a-entity cursor="rayOrigin:mouse" camera></a-entity>
+    	</a-scene>
+  	</body>
 </html>
